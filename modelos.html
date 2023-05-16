@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: rgb(220, 220, 220);
+    }
+
+    h4 {
+        color: brown;
+    }
+
+    h2 {
+        color: rgb(122, 88, 47);
+    }
+
+    .estilo {
+        border-color: black;
+        background-color: white;
+        color: blue;
+    }
+</style>
+
+<body>
+    <div class="container text-center py-3">
+        <div class="row"><h2>Comparativa Entre El Modelo OSI Y TCP/IP</h2></div>
+        <div class="row py-2"></div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="row py-1">
+                    <h4>Modelo OSI</h4>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">APLICACIÓN
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Aplicación del
+                                        Modelo OSI</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Esta es la única capa que interactúa directamente con los datos del usuario. Las
+                                    aplicaciones de software, como navegadores web y clientes de correo electrónico,
+                                    dependen de la capa de aplicación para iniciar comunicaciones. Sin embargo, debe
+                                    quedar claro que las aplicaciones de software cliente no forman parte de la capa
+                                    de aplicación; más bien, la capa de aplicación es responsable de los protocolos
+                                    y la manipulación de datos de los que depende el software para presentar datos
+                                    significativos al usuario.
+                                    <br>
+                                    Los protocolos de la capa de aplicación incluyen
+                                    HTTP, así como también SMTP.
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">PRESENTACIÓN
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Presentación del
+                                        Modelo OSI</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">Esta capa es principalmente responsable de preparar los
+                                    datos para que los pueda usar la capa de aplicación; en otras palabras, la capa
+                                    6 hace que los datos se preparen para su consumo por las aplicaciones. La capa
+                                    de presentación es responsable de la traducción, el cifrado y la compresión de
+                                    los datos.
+                                    <br>
+                                    Dos dispositivos de comunicación que se conectan entre sí podrían estar usando
+                                    distintos métodos de codificación, por lo que la capa 6 es la responsable de
+                                    traducir los datos entrantes en una sintaxis que la capa de aplicación del
+                                    dispositivo receptor pueda comprender.
+                                    <br>
+                                    Si los dispositivos se comunican a través de una conexión cifrada, la capa 6 es
+                                    responsable de añadir el cifrado en el extremo del emisor, así como de
+                                    decodificar el cifrado en el extremo del receptor, para poder presentar a la
+                                    capa de aplicación datos descifrados y legibles.
+                                    <br>
+                                    Después, la capa de presentación es también la encargada de comprimir los datos
+                                    que recibe de la capa de aplicación antes de ser enviados a la capa 5. Esto
+                                    ayuda a mejorar la velocidad y la eficiencia de la comunicación mediante la
+                                    minimización de la cantidad de datos que serán transferidos.
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">SESIÓN
+                    </button>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Sesión del Modelo
+                                        OSI</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    La capa de sesión es la responsable de la apertura y cierre de comunicaciones
+                                    entre dos dispositivos. Ese tiempo que transcurre entre la apertura de la
+                                    comunicación y el cierre de esta se conoce como sesión. La capa de sesión
+                                    garantiza que la sesión permanezca abierta el tiempo suficiente como para
+                                    transferir todos los datos que se están intercambiando; tras esto, cerrará sin
+                                    demora la sesión para evitar desperdicio de recursos.
+                                    <br>
+                                    La capa de sesión también sincroniza la transferencia de datos utilizando puntos
+                                    de control. Por ejemplo, si un archivo de 100 megabytes está transfiriéndose, la
+                                    capa de sesión podría fijar un punto de control cada 5 megabytes. En caso de
+                                    desconexión o caída tras haberse transferido, por ejemplo, 52 megabytes, la
+                                    sesión podría reiniciarse a partir del último punto de control, con lo cual solo
+                                    quedarían unos 50 megabytes pendientes de transmisión. Sin esos puntos de
+                                    control, la transferencia en su totalidad tendría que reiniciarse desde cero.
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">TRANSPORTE
+                    </button>
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Transporte del
+                                        Modelo OSI</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Es la responsable de las comunicaciones de extremo a extremo entre dos
+                                    dispositivos. Esto implica, antes de proceder a ejecutar el envío a la capa 3,
+                                    tomar datos de la capa de sesión y fragmentarlos seguidamente en trozos más
+                                    pequeños llamados segmentos. La capa de transporte del dispositivo receptor es
+                                    la responsable luego de rearmar tales segmentos y construir con ellos datos que
+                                    la capa de sesión pueda consumir.
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal4">RED
+                    </button>
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Red del Modelo OSI
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    La capa de red es responsable de facilitar la transferencia de datos entre dos
+                                    redes diferentes. Si los dispositivos que se comunican se encuentran en la misma
+                                    red, entonces la capa de red no es necesaria. Esta capa divide los segmentos de
+                                    la capa de transporte en unidades más pequeñas, llamadas paquetes, en el
+                                    dispositivo del emisor, y vuelve a juntar estos paquetes en el dispositivo del
+                                    receptor. La capa de red también busca la mejor ruta física para que los datos
+                                    lleguen a su destino; esto se conoce como enrutamiento.
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal5">ENLACE DE DATOS
+                    </button>
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Enlace de Datos del
+                                        Modelo OSI</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    La capa de enlace de datos es muy similar a la capa de red, excepto que la capa
+                                    de enlace de datos facilita la transferencia de datos entre dos dispositivos
+                                    dentro la misma red. La capa de enlace de datos toma los paquetes de la capa de
+                                    red y los divide en partes más pequeñas que se denominan tramas. Al igual que la
+                                    capa de red, esta capa también es responsable del control de flujo y el control
+                                    de errores en las comunicaciones dentro de la red (la capa de transporte solo
+                                    realiza tareas de control de flujo y de control de errores para las
+                                    comunicaciones dentro de la red).
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal6">FÍSICA
+                    </button>
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Física del Modelo
+                                        OSI</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Esta capa incluye el equipo físico implicado en la transferencia de datos, tal
+                                    como los cables y los conmutadores de red. Esta también es la capa donde los
+                                    datos se convierten en una secuencia de bits, es decir, una cadena de unos y
+                                    ceros. La capa física de ambos dispositivos también debe estar de acuerdo en
+                                    cuanto a una convención de señal para que los 1 puedan distinguirse de los 0 en
+                                    ambos dispositivos.
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+            </div>
+
+            <div class="col">
+                <div class="row py-1">
+                    <h4>Modelo TCP/IP</h4>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal7">APLICACIÓN
+                    </button>
+                    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Aplicación del
+                                        Modelo TCP/IP</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Incorpora aplicaciones de red estándar (Telnet, SMTP, FTP, etc.).
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal8">TRANSPORTE
+                    </button>
+                    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Transporte del
+                                        Modelo TCP/IP</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Brinda los datos de enrutamiento, junto con los mecanismos que permiten conocer
+                                    el estado de la transmisión. Comprende a los protocolos TCP y UDP.
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal9">INTERNET
+                    </button>
+                    <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Internet del
+                                        Modelo TCP/IP</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Es responsable de proporcionar el paquete de datos (datagrama).
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary estilo" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal10">ACCESO A LA RED
+                    </button>
+                    <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capa de Acceso a la Red del
+                                        Modelo TCP/IP</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Especifica la forma en la que los datos deben enrutarse, sea cual sea el tipo de
+                                    red utilizado.
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+
+</html>
